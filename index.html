@@ -1,20 +1,13 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Salvar arquivos</title>
   </head>
   <body>
-    <input type="file" accept=".pdf" id="file">
-    <button id="enviar">Enviar arquivo</button>
-    <script src="file.js" type="module"></script>
-    <script type="module">
-        import enviarArquivo from './file.js';
-
-        document.getElementById('enviar').addEventListener('click', enviarArquivo);
-    </script>
-    <script src="FileSaver.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
