@@ -8,7 +8,13 @@
   </head>
   <body>
     <input type="file" accept=".pdf" id="file">
-    <button onclick="enviarArquivo()" id="enviar" >Enviar arquivo</button>
-    <script src="file.js"></script>
+    <button id="enviar">Enviar arquivo</button>
+    <script src="file.js" type="module"></script>
+    <script type="module">
+        import enviarArquivo from './file.js';
+
+        document.getElementById('enviar').addEventListener('click', enviarArquivo);
+    </script>
+    <script src="FileSaver.js"></script>
   </body>
 </html>
