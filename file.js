@@ -5,7 +5,7 @@ function enviarArquivo(){
     const file = fileInput.files[0];
 
     if (file){
-        saveAs(file, "arquivo.txt");
+        saveAs(file, file.name);
     } else{
         console.error("Arquivo não selecionado");
     }
